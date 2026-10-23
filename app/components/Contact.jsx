@@ -1,4 +1,4 @@
-
+```jsx
 "use client";
 
 import { motion } from "motion/react";
@@ -11,6 +11,7 @@ import {
   Code2,
   MapPin,
   Send,
+  Globe,
 } from "lucide-react";
 
 const contacts = [
@@ -48,6 +49,13 @@ const contacts = [
     href: "https://github.com/AwaisTanveer-21",
     icon: Code2,
     description: "View my development work",
+  },
+  {
+    title: "Vercel",
+    value: "Visit my Vercel profile",
+    href: "https://vercel.com/at-developer1",
+    icon: Globe,
+    description: "Explore my deployed projects",
   },
 ];
 
@@ -230,7 +238,10 @@ export default function Contact() {
               </div>
 
               <div className="mt-6 flex items-start gap-2 text-sm leading-6 text-[var(--muted)]">
-                <MapPin size={17} className="mt-1 shrink-0 text-[var(--primary)]" />
+                <MapPin
+                  size={17}
+                  className="mt-1 shrink-0 text-[var(--primary)]"
+                />
                 <span>
                   Abbottabad, Pakistan
                   <span className="block">
@@ -245,3 +256,4 @@ export default function Contact() {
     </section>
   );
 }
+```
